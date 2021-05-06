@@ -1,0 +1,10 @@
+#adminmenumain, #wpadminbar, #wpfooter, .lumise_breadcrumb{
+	display: none !important;
+}
+#wpcontent, html.wp-toolbar, #wpbody-content, .lumise_wrapper{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.lumise_wrapper{
+	width: 100% !important;
+}

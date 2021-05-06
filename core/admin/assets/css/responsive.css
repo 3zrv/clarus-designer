@@ -1,0 +1,367 @@
+@media only screen and (min-width:1170px) {
+    .lumise_mobile{
+    	display: none;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1169px) {
+	.lumise_mobile{
+    	display: none;
+    }
+    .lumise_option .right{
+        float: left;
+        margin: 10px 0 0;
+    }
+    #lumise-stages-wrp .lumise_tab_nav, #lumise-stages-wrp .lumise_tabs, #lumise-stages-wrp .lumise_tab_content, #lumise-stages-wrp .lumise_tab_content .lumise-product-design{
+    	width: 100%;
+    	min-width: inherit;
+    }
+    #lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li{
+    	width: 31.33333333333333333333%;
+    	margin: 0 3% 3% 0;
+    }
+    #lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li:nth-child(6n){
+    	margin: 0 3% 3% 0;
+    }
+    #lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li:nth-child(3n){
+    	margin-right: 0;
+    }
+    .lumise-col-3{
+    	flex: 1 1 50%;
+    	max-width: 50%;
+    }
+    .lumise-col-6{
+    	max-width: 100%;
+    	flex: 1 1 100%;
+    }
+    .lumise-order-details .col-3{
+		width: 48%;
+    	margin: 0 4% 0 0;
+    }
+    .lumise-order-details .col-3:last-child{
+    	margin: 0;
+    }
+    .lumise_wrap.lumise_addons{
+    	width: 48%;
+    	margin-right: 4%;
+    }
+    .lumise_wrap.lumise_addons:nth-of-type(3n){
+    	margin-right: 4%;
+    }
+    .lumise_wrap.lumise_addons:nth-of-type(2n){
+    	margin-right: 0;
+    }
+    .lumise_wrap.lumise_addons .lumise_right{
+    	padding: 24px 18px;
+    }
+}
+
+@media (max-width:999px) {
+	.lumise_sidebar{
+		display: none;
+	}
+	.lumise_sidebar.lumise_mobile{
+		display: block;
+	}
+	.lumise_sidebar.lumise_mobile{
+		width: calc(100% - 30px);
+		margin: 15px 15px 0;
+	}
+	.lumise_sidebar.lumise_mobile .lumise_logo{
+		padding: 10px 0;
+		height: auto;
+	}
+	.lumise_sidebar.lumise_mobile .btn-toggle-sidebar-mb{
+		top: 12px;
+		right: 20px;
+		position: absolute;
+	    width: 34px;
+	    height: 34px;
+	    line-height: 34px;
+	    border-radius: 50%;
+	    background: #eee;
+	    cursor: pointer;
+	    color: #505050;
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	}
+	.lumise_sidebar.lumise_mobile .lumise_logo img{
+		padding-left: 17px;
+	}
+	.lumise_sidebar .lumise_menu{
+		position: fixed;
+		top: 0;
+		left: -250px;
+		width: 250px;
+		height: 100%;
+		overflow: auto;
+		z-index: 999999;
+		transition: all 0.3s ease 0s;
+	}
+	.lumise_sidebar.open .lumise_menu{
+		left: 0;
+	}
+	.lumise_sidebar.open .overlay_mb{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+		z-index: 100;
+	}
+	.page_sidebar_mini .lumise_wrapper{
+		width: 100% !important;
+	}
+	.lumise_wrapper{
+		width: 100%;
+		padding: 15px;
+	}
+    .lumise_form_group span,
+    .lumise_form_group .lumise_form_content{
+    	float: left;
+    	width: 100%;
+    	max-width: 100%;
+    	text-align: left;
+    }
+    .lumise_tabs{
+    	padding: 25px;
+    }
+    #lumise-stages-wrp .lumise_tab_nav, #lumise-stages-wrp .lumise_tabs, #lumise-stages-wrp .lumise_tab_content, #lumise-stages-wrp .lumise_tab_content .lumise-product-design{
+    	width: 100%;
+    	min-width: inherit;
+    }
+    .lumise-stage-settings img{
+    	max-width: 100%;
+    }
+    .lumise_option .right{
+        float: left;
+        margin: 10px 0 0;
+    }
+    .lumise_form_group.lumise_form_submit input[type="submit"]{
+    	margin-left: 0;
+    }
+    .lumise_form_group{
+    	margin-bottom: 15px;
+    }
+    .lumise_form_group input[type="text"]{
+    	max-width: 100%;
+    }
+    #lumise-popup div.lumise-langs-wrp{
+    	padding: 20px;
+    }
+    #lumise-cliparts-bundle-left,
+    #lumise-cliparts-bundle-right{
+    	padding: 0;
+    	border: 0;
+    }
+    #lumise-popup ul:not(.list-cate) li{
+    	width: 25%;
+    }
+    #lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li{
+    	width: 31.33333333333333333333%;
+    	margin: 0 3% 3% 0;
+    }
+    #lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li:nth-child(6n){
+    	margin: 0 3% 3% 0;
+    }
+    #lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li:nth-child(3n){
+    	margin-right: 0;
+    }
+    .lumise-col-3{
+    	flex: 1 1 50%;
+    	max-width: 50%;
+    }
+    .lumise-col-6{
+    	max-width: 100%;
+    	flex: 1 1 100%;
+    }
+    .lumise-popup-content.lumise-multi-cliparts {
+	    width: 80%;
+	}
+	 .lumise-order-details .col-3{
+		width: 48%;
+    	margin: 0 4% 0 0;
+    }
+    .lumise-order-details .col-3:last-child{
+    	margin: 0;
+    }
+    .lumise_wrap.lumise_addons{
+    	width: 48%;
+    	margin-right: 4%;
+    }
+    .lumise_wrap.lumise_addons:nth-of-type(3n){
+    	margin-right: 4%;
+    }
+    .lumise_wrap.lumise_addons:nth-of-type(2n){
+    	margin-right: 0;
+    }
+    .lumise_wrap.lumise_addons .lumise_right{
+    	padding: 24px 18px;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:999px) {
+	.lumise_form_group.lumise_field_print .lumise_form_content{
+		max-width: 100%;
+	}
+}
+
+@media (max-width:767px) {
+	.lumise_option .left #lumise-scan-language,
+	.lumise_option .left form{
+		margin-bottom: 10px;
+	}
+	.lumise_option .right{
+		margin: 0;
+	}
+	#lumise-popup div.lumise-langs-wrp{
+		padding: 20px;
+	}
+	#lumise-cliparts-bundle-left,
+	#lumise-cliparts-bundle-right{
+		min-height: auto;
+		padding-left: 0;
+		border: 0;
+		width: 100%;
+	}
+	.lumise_form_group.lumise_field_print .lumise_form_content{
+		max-width: 100%;
+	}
+	#lumise-popup .lumise_content h3.side-title{
+		width: 100%;
+		margin: 0px 0 10px;
+	}
+	#lumise-popup .lumise_content #lumise-cliparts-bundle-right h3.side-title{
+		margin: 20px 0 0;
+	}
+	#lumise-popup #lumise-cliparts-bundle-right h3#lumise-cliparts-bundle-stt{
+		margin: 15px 0 0;
+		font-size: 1.8em;
+	}
+	#lumise-popup ul:not(.list-cate) li{
+		width: 25%;
+	}
+	#lumise-popup header #lumise-language-selected button{
+		margin: 10px 0 0;
+		height: auto;
+		padding: 6px 0;
+	}
+	#lumise-popup header #lumise-language-selected{
+		padding: 0;
+	}
+	#lumise-stages-wrp{
+		width: 100%;
+	}
+	.lumise-col-3{
+    	flex: 1 1 100%;
+    	max-width: 100%;
+    }
+    .lumise-order-details .col-3{
+		width: 48%;
+    	margin: 0 4% 0 0;
+    }
+    .lumise-order-details .col-3:last-child{
+    	margin: 0;
+    }
+    .lumise_wrap.lumise_addons{
+    	width: 100%;
+    	margin-right: 0%;
+    }
+    .lumise_wrap.lumise_addons .lumise_right{
+    	padding: 20px 12px;
+    }
+}
+
+@media only screen and (min-width:640px) and (max-width:767px) {
+   
+}
+
+@media only screen and (min-width:480px) and (max-width:639px) {
+    #lumise-popup ul:not(.list-cate) li{
+		width: 33.333333333333333333%;
+	}
+	.lumise_form_group .lumise-field-attributes .lumise-attribute-body div[data-view="col"]{
+		width: 100%;
+		padding: 0 0 15px;
+	}
+	.lumise_content table tbody td:first-child{
+		width: 35px;
+	}
+	.lumise_form_settings .lumise_tab_nav li a{
+		padding: 5px 15px;
+	}
+	 .lumise-order-details .col-3{
+		width: 48%;
+    	margin: 0 4% 0 0;
+    }
+    .lumise-order-details .col-3:last-child{
+    	margin: 0;
+    }
+}
+
+@media only screen and (max-width:479px) {
+	.lumise_form_group .lumise_form_content input[type="color"]+button{
+		margin: 10px 0 0;
+	}
+	.lumise_tab_nav li a{
+		padding: 5px 15px;
+	}
+	.lumise_form_group .lumise_form_content input[type="color"]{
+		width: 100%;
+	}
+	#lumise-stages-wrp{
+		float: left;
+		width: 100%;
+	}
+	#lumise-popup header h3{
+		font-size: 16px;
+	}
+	#lumise-popup header .close-pop{
+		right: 3px;
+	}
+    .lumise_header .add_new{
+   		margin: 10px 0 0;
+   		clear: both;
+    }
+    #lumise-popup ul:not(.list-cate) li{
+		width: 50%;
+	}
+	#lumise-popup header input{
+		width: 200px;
+	}
+	#lumise-popup .lumise-popup-content ul.lumise-stagle-list-base li{
+    	width: 100%;
+    	margin: 0 0 15px !important;
+    }
+    #lumise-popup header h3 > small{
+    	font-size: 12px;
+    	line-height: 20px;
+    }
+    .lumise_form_group .lumise-field-attributes .lumise-attribute-body div[data-view="col"]{
+		width: 100%;
+		padding: 0 0 15px;
+	}
+	.lumise_content table tbody td:first-child{
+		width: 35px;
+	}
+	.lumise_wrap figure{
+		width: 100%;
+	}
+	.lumise_right{
+		width: 100%;
+		padding: 0;
+	}
+	.list_thumb.lusime_box_dashbroad .box_content ul li{
+		flex: 1 1 50%;
+		max-width: 50%;
+	}
+	.lumise-order-details .col-3{
+		width: 48%;
+    	margin: 0 4% 0 0;
+    }
+    .lumise-order-details .col-3:last-child{
+    	margin: 0;
+    }
+}

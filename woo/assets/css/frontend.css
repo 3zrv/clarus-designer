@@ -1,0 +1,136 @@
+.woocommerce-message .restore-item {
+	display: none;
+}
+.woocommerce a.lumise-edit-design{
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    color: #fff !important;
+    background-color: #47c1bf !important;
+    margin: 5px 0;
+    transition: all 0.3s ease 0s;
+}
+a.lumise-edit-design:hover {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+    color: #272727 !important;
+    background: #fff !important;
+}
+
+body .lumise-button.alt{
+    background: #EE6C4D;
+    display: inline-table;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+body .summary form .lumise-button.alt{
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-family: arial;
+    text-transform: uppercase;
+}
+div.woocommerce-variation-add-to-cart-disabled .lumise-button.alt{
+    background: #ccc;
+    cursor: not-allowed;
+    text-decoration: none !important;
+    display: none;
+}
+body .woocommerce .products .product .lumise-list-button, body.woocommerce .products .product .lumise-list-button{
+    background-color: #EE6C4D;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    line-height: 1;
+    width: auto;
+    padding: 12px 20px;
+    border-radius: 2px;
+    margin: 0 2px;
+}
+
+body .woocommerce .products .product .lumise-list-button:hover{
+    color: #333;
+}
+
+.lumise-design-thumbnails img{
+    box-shadow: 0 2px 10px rgba(0,0,0,.17);
+    height: 120px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.lumise-cart-thumbnails img{
+    border: 1px solid #ccc;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+    height: auto !important;
+}
+.lumise-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999999999;
+    font-size: 14px;
+    color: #3a3a3a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.lumise-lightbox .lumise-lightbox-body {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 2;
+    max-height: calc(100vh - 60px);
+    transform: translateX(-50%) translateY(-20%);
+    border-radius: 4px;
+    background: transparent;
+    padding: 30px;
+    text-align: left;
+    max-width: 600px;
+    color: #fff;
+
+}
+.lumise-lightbox-close {
+    position: absolute;
+    top: 34px;
+    right: 34px;
+    z-index: 99999;
+    width: 30px;
+    height: 30px;
+    color: #9E9E9E;
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 99;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+.lumise-lightbox-close:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+.lumise-lightbox-close svg{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+.lumise-lightbox .lumise-lightbox-overlay {
+    position: fixed;
+    z-index: 1;
+    background: rgba(0,0,0,.75);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+div.single_variation_wrap + a#lumise-customize-button{
+    display: none;
+}

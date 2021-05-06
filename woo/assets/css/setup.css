@@ -1,0 +1,1517 @@
+@charset "UTF-8";body {
+    margin: 65px auto 24px;
+    box-shadow: none;
+    background: #f1f1f1;
+    padding: 0
+}
+
+#lumise-logo {
+    border: 0;
+    margin: 0 0 24px;
+    padding: 0;
+    text-align: center
+}
+
+#lumise-logo img {
+    max-width: 30%
+}
+
+.lumise-setup {
+    text-align: center;
+    margin: 3em auto;
+    font-size: 1em;
+}
+
+.lumise-setup .select2-container {
+    text-align: left
+}
+
+.lumise-setup .hidden {
+    display: none
+}
+
+body.lumise-setup .lumise-setup-content {
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    padding: 2em;
+    margin: 0 0 20px;
+    background: #fff;
+    overflow: hidden;
+    zoom:1;
+    text-align: left;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+}
+body.lumise-setup .lumise-setup-content.loading:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #ffffffbf;
+    z-index: 1000;
+}
+body.lumise-setup .lumise-setup-content.loading:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "\f110";
+    z-index: 1000;
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 2em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    border-radius: 100%;
+    padding: 10px;
+    margin: -26px 0 0 -26px;
+}
+body.lumise-setup .lumise-setup-content .store-container {
+    box-shadow: none;
+    padding: 0px;
+}
+body.lumise-setup .lumise-setup-content .store-container h1{
+    margin: 0 0 20px;
+    border: 0;
+    padding: 0;
+    color: #666;
+    clear: none;
+    font-weight: normal;
+    font-size: 24px;
+}
+body.lumise-setup .lumise-setup-content .store-container .lumise_form_group{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 14px;
+}
+body.lumise-setup .lumise-setup-content .store-container .lumise_form_group .img-preview img {
+    max-width: 73%;
+}
+body.lumise-setup .lumise-setup-content .store-container .lumise_form_group.lumise_field_color{
+    padding-left: 0.5em;
+}
+body.lumise-setup .lumise-setup-content .store-container .lumise_form_group>span{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666666;
+    width: 100%;
+}
+.lumise_form_group .img-preview label{
+    font-size: 14px;
+}
+.lumise_form_group.lumise_field_color .lumise-field-color li {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 3px solid rgba(200, 200, 200, 0.3);
+}
+body.lumise-setup .lumise-field-color li:not(.choosed):after,
+body.lumise-setup .lumise-field-color li:not(.choosed):before{
+    display: none !important;
+}
+.lumise-setup-content h1,.lumise-setup-content h2,.lumise-setup-content h3,.lumise-setup-content table {
+    margin: 0 0 20px;
+    border: 0;
+    padding: 0;
+    color: #666;
+    clear: none;
+    font-weight: 500
+}
+
+.lumise-setup-content store-container p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.75em;
+    color: #666;
+}
+
+.lumise-setup-content table {
+    font-size: 1em;
+    line-height: 1.75em;
+    color: #666
+}
+
+.store-container .lumise-setup-content a {
+    color: #a16696
+}
+
+.lumise-setup-content a:focus,.lumise-setup-content a:hover {
+    color: #111
+}
+
+.lumise-setup-content .form-table th {
+    width: 35%;
+    vertical-align: top;
+    font-weight: 400
+}
+
+.lumise-setup-content .form-table td {
+    vertical-align: top
+}
+
+.lumise-setup-content .form-table td input,.lumise-setup-content .form-table td select {
+    width: 100%;
+    box-sizing: border-box
+}
+
+.lumise-setup-content .form-table td input[size] {
+    width: auto
+}
+
+.lumise-setup-content .form-table td .description {
+    line-height: 1.5em;
+    display: block;
+    margin-top: .25em;
+    color: #999;
+    font-style: italic
+}
+
+.lumise-setup-content .form-table td .input-checkbox,.lumise-setup-content .form-table td .input-radio {
+    width: auto;
+    box-sizing: inherit;
+    padding: inherit;
+    margin: 0 .5em 0 0;
+    box-shadow: none
+}
+
+.lumise-setup-content .form-table .section_title td {
+    padding: 0
+}
+
+.lumise-setup-content .form-table .section_title td h2,.lumise-setup-content .form-table .section_title td p {
+    margin: 12px 0 0
+}
+
+.lumise-setup-content .form-table td,.lumise-setup-content .form-table th {
+    padding: 12px 0;
+    margin: 0;
+    border: 0
+}
+
+.lumise-setup-content .form-table td:first-child,.lumise-setup-content .form-table th:first-child {
+    padding-right: 1em
+}
+
+.lumise-setup-content table.tax-rates {
+    width: 100%;
+    font-size: .92em
+}
+
+.lumise-setup-content table.tax-rates th {
+    padding: 0;
+    text-align: center;
+    width: auto;
+    vertical-align: middle
+}
+
+.lumise-setup-content table.tax-rates td {
+    border: 1px solid #f5f5f5;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.lumise-setup-content table.tax-rates td input {
+    outline: 0;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    text-align: center;
+    width: 100%
+}
+
+.lumise-setup-content table.tax-rates td.sort {
+    cursor: move;
+    color: #ccc
+}
+
+.lumise-setup-content table.tax-rates td.sort::before {
+    content: '\f333';
+    font-family: dashicons
+}
+
+.lumise-setup-content table.tax-rates td.readonly {
+    background: #f5f5f5
+}
+
+.lumise-setup-content table.tax-rates .add {
+    padding: 1em 0 0 1em;
+    line-height: 1em;
+    font-size: 1em;
+    width: 0;
+    margin: 6px 0 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block
+}
+
+.lumise-setup-content table.tax-rates .add::before {
+    content: '\f502';
+    font-family: dashicons;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.lumise-setup-content table.tax-rates .remove {
+    padding: 1em 0 0 1em;
+    line-height: 1em;
+    font-size: 1em;
+    width: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block
+}
+
+.lumise-setup-content table.tax-rates .remove::before {
+    content: '\f182';
+    font-family: dashicons;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.lumise-setup-content .lumise-setup-pages {
+    width: 100%;
+    border-top: 1px solid #eee
+}
+
+.lumise-setup-content .lumise-setup-pages thead th {
+    display: none
+}
+
+.lumise-setup-content .lumise-setup-pages .page-name {
+    width: 30%;
+    font-weight: 700
+}
+
+.lumise-setup-content .lumise-setup-pages td,.lumise-setup-content .lumise-setup-pages th {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee
+}
+
+.lumise-setup-content .lumise-setup-pages td:first-child,.lumise-setup-content .lumise-setup-pages th:first-child {
+    padding-right: 9px
+}
+
+.lumise-setup-content .lumise-setup-pages th {
+    padding-top: 0
+}
+
+.lumise-setup-content .lumise-setup-pages .page-options p {
+    color: #777;
+    margin: 6px 0 0 24px;
+    line-height: 1.75em
+}
+
+.lumise-setup-content .lumise-setup-pages .page-options p input {
+    vertical-align: middle;
+    margin: 1px 0 0;
+    height: 1.75em;
+    width: 1.75em;
+    line-height: 1.75em
+}
+
+.lumise-setup-content .lumise-setup-pages .page-options p label {
+    line-height: 1
+}
+
+@media screen and (max-width: 782px) {
+    .lumise-setup-content .form-table tbody th {
+        width:auto
+    }
+}
+
+.lumise-setup-content .twitter-share-button {
+    float: right
+}
+
+.lumise-setup-content .lumise-setup-next-steps {
+    overflow: hidden;
+    margin: 0 0 24px;
+    padding-bottom: 2px
+}
+
+.lumise-setup-content .lumise-setup-next-steps h2 {
+    margin-bottom: 12px
+}
+
+.lumise-setup-content .lumise-setup-next-steps .lumise-setup-next-steps-first {
+    float: left;
+    width: 50%;
+    box-sizing: border-box
+}
+
+.lumise-setup-content .lumise-setup-next-steps .lumise-setup-next-steps-last {
+    float: right;
+    width: 50%;
+    box-sizing: border-box
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul {
+    padding: 0 2em 0 0;
+    list-style: none outside;
+    margin: 0
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul li a {
+    display: block;
+    padding: 0 0 .75em
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button {
+    background-color: #f7f7f7;
+    border-color: #ccc;
+    color: #23282d;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 #ccc;
+    text-shadow: 1px 0 1px #eee,0 1px 1px #eee;
+    font-size: 1em;
+    height: auto;
+    line-height: 1.75em;
+    margin: 0 0 .75em;
+    opacity: 1;
+    padding: 1em;
+    text-align: center
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button:active,.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button:focus,.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button:hover {
+    background: #f5f5f5;
+    border-color: #aaa
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button-primary {
+    color: #fff;
+    background-color: #bb77ae;
+    border-color: #a36597;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 #a36597;
+    text-shadow: 0 -1px 1px #a36597,1px 0 1px #a36597,0 1px 1px #a36597,-1px 0 1px #a36597
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button-primary:active,.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button-primary:focus,.lumise-setup-content .lumise-setup-next-steps ul .setup-product a.button-primary:hover {
+    color: #fff;
+    background: #a36597;
+    border-color: #a36597;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 #a36597
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul li a::before {
+    color: #82878c;
+    font: normal 20px/1 dashicons;
+    speak: none;
+    display: inline-block;
+    padding: 0 10px 0 0;
+    top: 1px;
+    position: relative;
+    text-decoration: none!important;
+    vertical-align: top
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .learn-more a::before {
+    content: '\f105'
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .video-walkthrough a::before {
+    content: '\f126'
+}
+
+.lumise-setup-content .lumise-setup-next-steps ul .newsletter a::before {
+    content: '\f465'
+}
+
+.lumise-setup-content .updated,.lumise-setup-content .woocommerce-newsletter {
+    padding: 24px 24px 0;
+    margin: 0 0 24px;
+    overflow: hidden;
+    background: #f5f5f5
+}
+
+.lumise-setup-content .updated p,.lumise-setup-content .woocommerce-newsletter p {
+    padding: 0;
+    margin: 0 0 12px
+}
+
+.lumise-setup-content .updated form,.lumise-setup-content .updated p:last-child,.lumise-setup-content .woocommerce-newsletter form,.lumise-setup-content .woocommerce-newsletter p:last-child {
+    margin: 0 0 24px
+}
+
+.lumise-setup-content .woocommerce-tracker {
+    margin: 24px 0;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.lumise-setup-content .woocommerce-tracker p {
+    font-size: 14px;
+    line-height: 1.5em
+}
+
+.lumise-setup-content .woocommerce-tracker .checkbox {
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 20px
+}
+
+.lumise-setup-content .checkbox input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    left: -9999px
+}
+
+.lumise-setup-content .checkbox label {
+    position: relative;
+    display: inline-block;
+    padding-left: 28px
+}
+
+.lumise-setup-content .checkbox label:after,.lumise-setup-content .checkbox label:before {
+    position: absolute;
+    content: "";
+    display: inline-block
+}
+
+.lumise-setup-content .checkbox label:before {
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 3px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    border-radius: 3px
+}
+
+.lumise-setup-content .checkbox label:after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 7px;
+    color: #fff
+}
+
+.lumise-setup-content .checkbox input[type=checkbox]+label::after {
+    content: none
+}
+
+.lumise-setup-content .checkbox input[type=checkbox]:checked+label::after {
+    content: ""
+}
+
+.lumise-setup-content .checkbox input[type=checkbox]:focus+label::before {
+    outline: #3b99fc auto 5px
+}
+
+.lumise-setup-content .checkbox input[type=checkbox]:checked+label::before {
+    background: #935687;
+    border-color: #935687
+}
+
+.lumise-setup-steps {
+    padding: 0 0 24px;
+    margin: 0;
+    list-style: none outside;
+    overflow: hidden;
+    color: #ccc;
+    width: 100%;
+    display: -webkit-inline-box;
+    display: inline-flex;
+}
+
+.lumise-setup-steps li {
+    width: 100%;
+    float: left;
+    padding: 0 0 .8em;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid #ccc;
+    line-height: 1.4em;
+}
+
+.lumise-setup-steps li a {
+    color: #47c1bf;
+    text-decoration: none;
+    padding: 1.5em;
+    margin: -1.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.lumise-setup-steps li a:focus,.lumise-setup-steps li a:hover {
+    color: #111;
+    text-decoration: underline
+}
+
+.lumise-setup-steps li::before {
+    content: '';
+    border: 4px solid #ccc;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6px;
+    margin-bottom: -8px;
+    background: #fff;
+    box-sizing: content-box;
+}
+
+.lumise-setup-steps li.active {
+    border-color: #47c1bf;
+    color: #47c1bf;
+    font-weight: 700;
+}
+
+.lumise-setup-steps li.active::before {
+    border-color: #47c1bf;
+}
+
+.lumise-setup-steps li.done {
+    border-color: #47c1bf;
+    color: #47c1bf;
+}
+
+.lumise-setup-steps li.done::before {
+    border-color: #47c1bf;
+    background: #ffffff;
+}
+
+.lumise-setup .lumise-setup-actions {
+    overflow: hidden;
+    margin: 1em 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: flex;
+}
+
+.lumise-setup .lumise-setup-actions .button {
+    font-size: 1.25em;
+    padding: .5em 1em;
+    line-height: 1em;
+    margin-right: .5em;
+    margin-bottom: 2px;
+    height: auto;
+    border-radius: 4px
+}
+
+.lumise-setup .lumise-setup-actions .button-primary {
+    background-color: #47c1bf;
+    border-color: #3eafad;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 #49bfaf;
+    text-shadow: none;
+    margin: 0;
+    opacity: 1;
+}
+
+.lumise-setup .lumise-setup-actions .button-primary:active,
+.lumise-setup .lumise-setup-actions .button-primary:hover {
+    background: #349e9d;
+    border-color: #2d8a88;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 #368e3a;
+}
+
+.lumise-setup-content p:last-child {
+    margin-bottom: 0;
+}
+
+.lumise-setup-content p.store-setup{
+    margin: 10px 0 30px;
+    font-size: 16px;
+}
+.lumise-setup-content p.store-setup.error{
+    background: #ffecf3;
+    padding: 10px 14px;
+    border-left: 4px solid #E91E63;
+}
+.lumise-setup-footer-links {
+    font-size: .85em;
+    color: #7b7b7b;
+    margin: 1.18em auto;
+    display: inline-block;
+    text-align: center;
+}
+.lumise-setup-footer-links.disabled {
+    cursor: default;
+}
+.lumise-setup-footer-links:hover {
+    color: #47c1bf;
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-intro {
+    padding: 40px 40px 0;
+    background: #f5f5f5;
+    text-align: center
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-intro img {
+    margin: 40px 0 0 0;
+    width: 100%;
+    display: block
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-features {
+    list-style: none outside;
+    margin: 0 0 20px;
+    padding: 0 0 0 30px;
+    overflow: hidden
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature {
+    margin: 0;
+    padding: 20px 30px 20px 2em;
+    width: 50%;
+    box-sizing: border-box
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature::before {
+    margin-left: -2em;
+    position: absolute
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature.first {
+    clear: both;
+    float: left
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature.last {
+    float: right
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature__bulletproof::before {
+    content: '🔒'
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature__mobile::before {
+    content: '📱'
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature__accessibility::before {
+    content: '👓'
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature__search::before {
+    content: '🔍'
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature__compatibility::before {
+    content: '🔧'
+}
+
+.lumise-wizard-storefront .lumise-wizard-storefront-feature__extendable::before {
+    content: '🎨'
+}
+
+.lumise-wizard-services {
+    border: 1px solid #eee;
+    padding: 0;
+    margin: 0 0 1.2em;
+    list-style: none outside;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.lumise-wizard-services p {
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5em
+}
+
+.lumise-wizard-service-item,.lumise-wizard-services-list-toggle {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    -webkit-box-align: center;
+    align-items: center
+}
+
+.lumise-wizard-service-item:last-child,.lumise-wizard-services-list-toggle:last-child {
+    border-bottom: 0
+}
+
+.lumise-wizard-service-item .payment-gateway-fee,.lumise-wizard-services-list-toggle .payment-gateway-fee {
+    color: #a6a6a6
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-name,.lumise-wizard-services-list-toggle .lumise-wizard-service-name {
+    flex-basis: 0;
+    min-width: 160px;
+    text-align: center;
+    font-weight: 700;
+    padding: 1em 0;
+    display: inline-block;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+
+.lumise-wizard-payment-gateway-form .lumise-wizard-service-item .lumise-wizard-service-name,.lumise-wizard-payment-gateway-form .lumise-wizard-services-list-toggle .lumise-wizard-service-name {
+    -webkit-box-pack: center;
+    justify-content: center
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle .lumise-wizard-service-name img {
+    max-width: 100px;
+}
+
+.lumise-wizard-service-item.stripe-logo .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle.stripe-logo .lumise-wizard-service-name img {
+    padding: 8px 0
+}
+
+.lumise-wizard-service-item.paypal-logo .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle.paypal-logo .lumise-wizard-service-name img {
+    max-width: 87px;
+    padding: 2px 0
+}
+
+.lumise-wizard-service-item.klarna-logo .lumise-wizard-service-name,.lumise-wizard-services-list-toggle.klarna-logo .lumise-wizard-service-name {
+    background: #000
+}
+
+.lumise-wizard-service-item.klarna-logo .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle.klarna-logo .lumise-wizard-service-name img {
+    max-width: 87px;
+    padding: 12px 0
+}
+
+.lumise-wizard-service-item.square-logo .lumise-wizard-service-name,.lumise-wizard-services-list-toggle.square-logo .lumise-wizard-service-name {
+    background: #000
+}
+
+.lumise-wizard-service-item.square-logo .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle.square-logo .lumise-wizard-service-name img {
+    max-width: 95px;
+    padding: 12px 0
+}
+
+.lumise-wizard-service-item.eway-logo .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle.eway-logo .lumise-wizard-service-name img {
+    max-width: 87px
+}
+
+.lumise-wizard-service-item.payfast-logo .lumise-wizard-service-name img,.lumise-wizard-services-list-toggle.payfast-logo .lumise-wizard-service-name img {
+    max-width: 140px
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-description,.lumise-wizard-services-list-toggle .lumise-wizard-service-description {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 20px
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-description p,.lumise-wizard-services-list-toggle .lumise-wizard-service-description p {
+    margin-bottom: 1em
+}
+.lumise-wizard-service-item .lumise-wizard-service-description p strong,
+.lumise-wizard-services-list-toggle .lumise-wizard-service-description p strong{
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.lumise-wizard-service-item .lumise-wizard-service-description p:last-child,.lumise-wizard-services-list-toggle .lumise-wizard-service-description p:last-child {
+    margin-bottom: 0
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-description .lumise-wizard-service-settings-description,.lumise-wizard-services-list-toggle .lumise-wizard-service-description .lumise-wizard-service-settings-description {
+    display: block;
+    font-style: italic;
+    color: #999
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-enable,
+.lumise-wizard-services-list-toggle .lumise-wizard-service-enable {
+    flex-basis: 0;
+    min-width: 75px;
+    text-align: center;
+    cursor: pointer;
+    padding: 2em 0;
+    position: relative;
+    max-height: 1.5em;
+    align-self: flex-start;
+}
+.lumise-wizard-service-item .lumise-wizard-service-enable i,
+.lumise-wizard-services-list-toggle .lumise-wizard-service-enable i{
+    color: #47c1bf;
+    font-size: 20px;
+    cursor: default;
+}
+.lumise-wizard-service-item .lumise-wizard-service-toggle,.lumise-wizard-services-list-toggle .lumise-wizard-service-toggle {
+    height: 24px;
+    width: 44px;
+    border: 2px solid #47c1bf;
+    background-color: #47c1bf;
+    display: inline-block;
+    text-indent: -9999px;
+    border-radius: 10em;
+    position: relative;
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-toggle input[type=checkbox],.lumise-wizard-services-list-toggle .lumise-wizard-service-toggle input[type=checkbox] {
+    display: none
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-toggle:before,.lumise-wizard-services-list-toggle .lumise-wizard-service-toggle:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-toggle.disabled,.lumise-wizard-services-list-toggle .lumise-wizard-service-toggle.disabled {
+    border-color: #999;
+    background-color: #999
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-toggle.disabled:before,.lumise-wizard-services-list-toggle .lumise-wizard-service-toggle.disabled:before {
+    right: auto;
+    left: 0
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-settings,.lumise-wizard-services-list-toggle .lumise-wizard-service-settings {
+    display: none;
+    margin-top: .75em;
+    margin-bottom: 0;
+    cursor: default
+}
+
+.lumise-wizard-service-item .lumise-wizard-service-settings.hide,.lumise-wizard-services-list-toggle .lumise-wizard-service-settings.hide {
+    display: none
+}
+
+.lumise-wizard-service-item.checked .lumise-wizard-service-settings,.lumise-wizard-services-list-toggle.checked .lumise-wizard-service-settings {
+    display: inline-block
+}
+
+.lumise-wizard-service-item.checked .lumise-wizard-service-settings.hide,.lumise-wizard-services-list-toggle.checked .lumise-wizard-service-settings.hide {
+    display: none
+}
+
+.lumise-wizard-service-item.closed,.lumise-wizard-services-list-toggle.closed {
+    border-bottom: 0
+}
+
+.lumise-wizard-services-list-toggle {
+    cursor: pointer
+}
+
+.lumise-wizard-services-list-toggle .lumise-wizard-service-enable::before {
+    content: "\f343";
+    font-family: dashicons;
+    visibility: initial;
+    color: #666;
+    font-size: 25px;
+    margin-top: -7px;
+    margin-left: -5px;
+    position: absolute;
+    visibility: visible
+}
+
+.lumise-wizard-services-list-toggle.closed .lumise-wizard-service-enable::before {
+    content: "\f347"
+}
+
+.lumise-wizard-services-list-toggle .lumise-wizard-service-enable input {
+    visibility: hidden;
+    position: relative
+}
+
+.lumise-wizard-services.manual .lumise-wizard-service-item {
+    display: none
+}
+
+.lumise-wizard-services.shipping .lumise-wizard-service-name {
+    font-weight: 400;
+    text-align: left;
+    -webkit-box-align: center;
+    align-items: center;
+    max-height: 5em;
+    padding: 0
+}
+
+.lumise-wizard-services.shipping .lumise-wizard-service-item {
+    padding-left: 2em;
+    padding-top: .67em
+}
+
+.lumise-wizard-services.shipping .lumise-wizard-service-item:first-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 700
+}
+
+.lumise-wizard-services.shipping .lumise-wizard-service-item:first-child .lumise-wizard-service-name {
+    font-weight: 700
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting,.lumise-wizard-services.shipping .lumise-wizard-shipping-method-select {
+    display: -webkit-box;
+    display: flex
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting.hide,.lumise-wizard-services.shipping .lumise-wizard-shipping-method-select.hide {
+    display: none
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input,.lumise-wizard-services.shipping .lumise-wizard-shipping-method-dropdown {
+    margin-right: 2em;
+    margin-bottom: 1em
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input .select2,.lumise-wizard-services.shipping .lumise-wizard-shipping-method-dropdown .select2 {
+    min-width: 130px
+}
+
+.lumise-wizard-services.shipping .lumise-wizard-service-description {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    color: #a6a6a6
+}
+
+.lumise-wizard-services.shipping .lumise-wizard-service-item:not(:first-child) .lumise-wizard-service-description {
+    font-size: .92em;
+    padding-bottom: 10px
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input {
+    width: 95px;
+    border: 1px solid #aaa;
+    border-color: #ddd;
+    border-radius: 4px;
+    height: 28px;
+    padding-left: 8px;
+    padding-right: 24px;
+    font-size: 14px;
+    color: #444;
+    background-color: #fff;
+    display: inline-block
+}
+
+.lumise-wizard-services.shipping .shipping-method-description,.lumise-wizard-services.shipping .shipping-method-setting .description {
+    color: #7e7e7e;
+    font-size: .9em
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input::-webkit-input-placeholder {
+    color: #e1e1e1
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input::-moz-placeholder {
+    color: #e1e1e1
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input:-ms-input-placeholder {
+    color: #e1e1e1
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input::-ms-input-placeholder {
+    color: #e1e1e1
+}
+
+.lumise-wizard-services.shipping .shipping-method-setting input::placeholder {
+    color: #e1e1e1
+}
+
+.lumise-setup-shipping-units p {
+    line-height: 1.5em;
+    font-size: 13px;
+    margin-bottom: .25em
+}
+
+.lumise-setup-shipping-units .lumise-setup-shipping-unit {
+    margin-bottom: 1.75em
+}
+
+.lumise-setup-shipping-units .lumise-setup-shipping-unit .select2 {
+    min-width: 100%
+}
+
+.hide {
+    display: none
+}
+
+.lumise-wizard-features {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0
+}
+
+.lumise-wizard-features .lumise-wizard-feature-item {
+    flex-basis: calc(50% - 4em - 3px);
+    border: 1px solid #eee;
+    padding: 2em
+}
+
+.lumise-wizard-features .lumise-wizard-feature-item:nth-child(1) {
+    border-radius: 4px 0 0 0
+}
+
+.lumise-wizard-features .lumise-wizard-feature-item:nth-child(2) {
+    border-left: 0;
+    border-radius: 0 4px 0 0
+}
+
+.lumise-wizard-features .lumise-wizard-feature-item:nth-child(3) {
+    border-top: 0;
+    border-radius: 0 0 0 4px
+}
+
+.lumise-wizard-features .lumise-wizard-feature-item:nth-child(4) {
+    border-top: 0;
+    border-left: 0;
+    border-radius: 0 0 4px 0
+}
+
+.lumise-wizard-features p.lumise-wizard-feature-description,.lumise-wizard-features p.lumise-wizard-feature-name {
+    margin: 0;
+    line-height: 1.5em
+}
+
+h3.jetpack-reasons {
+    text-align: center;
+    margin: 3em 0 1em 0;
+    font-size: 14px
+}
+
+.jetpack-logo,.wcs-notice {
+    display: block;
+    margin: 1.75em auto 2em auto;
+    max-height: 175px
+}
+
+.activate-splash .jetpack-logo {
+    width: 170px;
+    margin-bottom: 0
+}
+
+.activate-splash .wcs-notice {
+    margin-top: 1em;
+    padding-left: 57px
+}
+
+.step {
+    text-align: center
+}
+
+.lumise-setup .lumise-setup-actions .button {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1em 2em;
+    box-shadow: none;
+    min-width: 12em;
+    min-width: auto;
+    margin: 0 auto 1.2em;
+    float: none;
+}
+.lumise-setup .lumise-setup-actions.step .button {
+    margin: 0 auto;    
+}
+.lumise-setup .lumise-setup-actions .button:active,.lumise-setup .lumise-setup-actions .button:focus,.lumise-setup .lumise-setup-actions .button:hover {
+    box-shadow: none
+}
+
+.lumise-setup .lumise-setup-actions .plugin-install-info {
+    display: block;
+    font-style: italic;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 5px 0
+}
+
+.lumise-setup .lumise-setup-actions .plugin-install-info>* {
+    display: block
+}
+
+.lumise-setup .lumise-setup-actions .plugin-install-info .plugin-install-info-list-item:not(:last-child)::after {
+    content: ', '
+}
+
+.lumise-setup .lumise-setup-actions .plugin-install-info a {
+    white-space: nowrap
+}
+
+.lumise-setup .lumise-setup-actions .plugin-install-info a:not(:hover):not(:focus) {
+    color: inherit
+}
+
+.plugin-install-source {
+    background: rgba(187,119,174,.15)
+}
+
+.plugin-install-source:not(.lumise-wizard-service-item) {
+    box-shadow: 0 0 0 10px rgba(187,119,174,.15)
+}
+
+.location-prompt {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: .5em;
+    margin-top: .85em;
+    display: inline-block
+}
+
+.location-input {
+    border: 1px solid #aaa;
+    border-color: #ddd;
+    border-radius: 4px;
+    height: 34px;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 24px;
+    font-size: 16px;
+    color: #444;
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+textarea.location-input {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+.location-input.dropdown {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+}
+
+.address-step .select2 {
+    min-width: 100%
+}
+
+.store-container .two-cols {
+    display: -webkit-box;
+    display: flex;
+    clear: both;
+}
+
+.store-container .two-cols div {
+    flex-basis: 50%;
+    margin-right: 1em
+}
+
+.store-container .two-cols div:last-of-type {
+    margin-right: 0
+}
+
+.store-container .select2-container,.store-container input[type=text],.store-container select {
+    margin-bottom: 10px
+}
+
+.product-type-container {
+    margin-top: 14px;
+    margin-bottom: 1px
+}
+
+#woocommerce_sell_in_person {
+    margin-left: 0
+}
+
+.lumise-wizard-service-settings .payment-email-input {
+    border: 1px solid #aaa;
+    border-color: #ddd;
+    border-radius: 4px;
+    height: 30px;
+    padding: 0 8px;
+    font-size: 14px;
+    color: #444;
+    background-color: #fff;
+    display: inline-block
+}
+
+.newsletter-form-container {
+    display: -webkit-box;
+    display: flex
+}
+
+.newsletter-form-container .newsletter-form-email {
+    border: 1px solid #aaa;
+    border-color: #ddd;
+    border-radius: 4px;
+    height: 42px;
+    padding: 0 8px;
+    font-size: 16px;
+    color: #666;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 6px;
+    -webkit-box-flex: 1;
+    flex-grow: 1
+}
+
+.newsletter-form-container .newsletter-form-button-container {
+    -webkit-box-flex: 0;
+    flex-grow: 0
+}
+
+.lumise-setup .lumise-setup-actions .button.newsletter-form-button {
+    height: 42px;
+    padding: 0 1em;
+    margin: 0
+}
+
+.lumise-wizard-next-steps {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0
+}
+
+.lumise-wizard-next-steps li {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.lumise-wizard-next-steps .lumise-wizard-next-step-item {
+    display: -webkit-box;
+    display: flex;
+    border-top: 1px solid #eee
+}
+
+.lumise-wizard-next-steps .lumise-wizard-next-step-item:first-child {
+    border-top: 0
+}
+
+.lumise-wizard-next-steps .lumise-wizard-next-step-description {
+    display: block;
+    margin: 10px 1em 0;
+    font-size: 16px;
+}
+
+.lumise-wizard-next-steps .lumise-wizard-next-step-action {
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lumise-wizard-next-steps .lumise-wizard-next-step-action .button {
+}
+
+.lumise-wizard-next-steps p.next-step-heading {
+    margin: 0;
+    font-size: .95em;
+    font-weight: 400;
+    font-variant: all-petite-caps
+}
+
+.lumise-wizard-next-steps p.next-step-extra-info {
+    margin: 0
+}
+
+.lumise-wizard-next-steps h3.next-step-description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.lumise-wizard-next-steps .lumise-wizard-additional-steps {
+    border-top: 1px solid #eee
+}
+
+.lumise-wizard-next-steps .lumise-wizard-additional-steps .lumise-wizard-next-step-description {
+    margin-bottom: 0
+}
+
+.lumise-wizard-next-steps .lumise-wizard-additional-steps .lumise-setup-actions {
+    margin: 0 0 1.5em 0
+}
+
+.lumise-wizard-next-steps .lumise-wizard-additional-steps .lumise-setup-actions .button {
+    font-size: 15px;
+    margin: 1em 0 1em 1.5em
+}
+
+.lumise-wizard-next-steps .lumise-wizard-additional-steps .lumise-setup-actions .button::last-child {
+    margin-right: 1.5em
+}
+
+.store-container p.next-steps-help-text {
+    color: #9f9f9f;
+    padding: 1em 2em;
+    text-align: center;
+    font-size: .9em;
+}
+
+p.jetpack-terms {
+    font-size: .8em;
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.5em
+}
+
+.woocommerce-error {
+    background: #ffe6e5;
+    border-color: #ffc5c2;
+    padding: 1em;
+    margin-bottom: 1em
+}
+
+.woocommerce-error p {
+    margin-top: 0;
+    margin-bottom: .5em;
+    color: #444
+}
+
+.woocommerce-error a {
+    color: #ff645c
+}
+
+.woocommerce-error .reconnect-reminder {
+    font-size: .85em
+}
+
+.woocommerce-error .lumise-setup-actions .button {
+    font-size: 14px
+}
+
+.lumise-wizard-service-setting-ppec_paypal_reroute_requests,.lumise-wizard-service-setting-stripe_create_account {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start
+}
+
+.lumise-wizard-service-setting-ppec_paypal_reroute_requests .payment-checkbox-input,.lumise-wizard-service-setting-stripe_create_account .payment-checkbox-input {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1.5em
+}
+
+.lumise-wizard-service-setting-ppec_paypal_reroute_requests .ppec_paypal_reroute_requests,.lumise-wizard-service-setting-ppec_paypal_reroute_requests .stripe_create_account,.lumise-wizard-service-setting-stripe_create_account .ppec_paypal_reroute_requests,.lumise-wizard-service-setting-stripe_create_account .stripe_create_account {
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+    margin-left: .3em
+}
+
+.lumise-wizard-service-setting-ppec_paypal_email,.lumise-wizard-service-setting-stripe_email {
+    margin-top: .75em;
+    margin-left: 1.5em
+}
+
+.lumise-wizard-service-setting-ppec_paypal_email label.ppec_paypal_email,.lumise-wizard-service-setting-ppec_paypal_email label.stripe_email,.lumise-wizard-service-setting-stripe_email label.ppec_paypal_email,.lumise-wizard-service-setting-stripe_email label.stripe_email {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0
+}
+
+.lumise-wizard-service-setting-ppec_paypal_email input.payment-email-input,.lumise-wizard-service-setting-stripe_email input.payment-email-input {
+    box-sizing: border-box;
+    margin-bottom: .5em;
+    width: 100%;
+    height: 32px
+}
+
+.lumise-setup-content .recommended-step {
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 2.5em
+}
+
+.lumise-setup-content .recommended-step li {
+    list-style: none
+}
+
+.lumise-setup-content .recommended-step li:last-child label {
+    margin-bottom: 0
+}
+
+.lumise-setup-content .recommended-step label {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1.5em
+}
+
+.lumise-setup-content .recommended-step label:after,.lumise-setup-content .recommended-step label:before {
+    top: auto
+}
+
+.lumise-setup-content .recommended-step label:after {
+    margin-top: -1.5px
+}
+
+.lumise-setup-content .recommended-step .recommended-item-icon {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    height: 3.5em;
+    margin-right: 1em;
+    margin-left: 4px
+}
+
+.lumise-setup-content .recommended-step .recommended-item-icon.recommended-item-icon-storefront_theme {
+    background-color: #f4a224;
+    max-height: 3em;
+    max-width: 3em;
+    padding: .25em
+}
+
+.lumise-setup-content .recommended-step .recommended-item-icon.recommended-item-icon-automated_taxes {
+    background-color: #d0011b;
+    max-height: 1.75em;
+    padding: .875em
+}
+
+.lumise-setup-content .recommended-step .recommended-item-icon.recommended-item-icon-mailchimp {
+    background-color: #209bbb;
+    height: 2em;
+    padding: .75em
+}
+
+.lumise-setup-content .recommended-step .recommended-item-description-container h3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-bottom: 0
+}
+
+.lumise-setup-content .recommended-step .recommended-item-description-container p {
+    margin-top: 0;
+    line-height: 1.5em
+}
