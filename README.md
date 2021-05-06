@@ -11,12 +11,12 @@ PHP must allows functions:
 * file_put_contents
 * file_get_contents
 
-###System resource – PHP settings
+### System resource – PHP settings
 * allow_url_fopen
 * memory_limit – recommend 256MB
 * post_max_size – recommend 800MB
 
-###Why Memory & Post-Data?
+### Why Memory & Post-Data?
 
 While working with tools, it doesn’t require a little resource from the server. The progress base on your client's performance.
 Your customer may add many resources; total capacity data is big sometimes.
