@@ -1,12 +1,4 @@
 <?php
-/*
-Plugin Name: Lumise - Product Designer Tool
-Plugin URI: https://www.lumise.com/
-Description: The professional solution for designing & printing online
-Author: King-Theme
-Version: 1.9.8
-Author URI: http://king-theme.com/
-*/
 
 if(!defined('DS')) {
 	if(DIRECTORY_SEPARATOR == "\\"){
